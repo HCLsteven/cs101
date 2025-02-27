@@ -1,11 +1,9 @@
 #include <stdio.h>
 
-int main() {
-    for (int y = 1; y <= 9; y++) {  
-        for (int x = 1; x <= 9; x++) {  
-            printf("%d*%d=%d\t", y, x, y * x);  
+int main(){
+    for(int i=1,j=0;i<=9;){
+        printf("%d*%d=%d\t",i,j,i*++j);
+        (j==9)?(i++,j=0,printf("\n")):i;
         }
-        printf("\n");  
-    }
     return 0;
 }
